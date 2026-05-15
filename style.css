@@ -420,3 +420,66 @@ footer {
 .rata-kanan {
   text-align: right;
 }
+.interest-button {
+  padding: 8px 14px;
+  background-color: #eadfce;
+  color: #4a3528;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: inherit;
+}
+
+.interest-button:hover {
+  background-color: #8a5a44;
+  color: white;
+}
+
+.publication-list {
+  display: none;
+  margin-top: 20px;
+  padding: 18px 22px;
+  background-color: #fffaf2;
+  border: 1px solid #e3dacb;
+  border-radius: 6px;
+}
+
+.publication-list h3 {
+  margin-top: 0;
+  color: #8a5a44;
+}
+
+.publication-list ul {
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.publication-list a {
+  color: #8a5a44;
+  text-decoration: none;
+}
+
+.publication-list a:hover {
+  text-decoration: underline;
+}
+.dark-mode .interest-button {
+  background-color: #2a2a2a;
+  color: #f4d6b6;
+}
+
+.dark-mode .interest-button:hover {
+  background-color: #d6b28d;
+  color: #111111;
+}
+
+.dark-mode .publication-list {
+  background-color: #1b1b1b;
+  border-color: #333;
+}
+
+.dark-mode .publication-list h3,
+.dark-mode .publication-list a {
+  color: #d6b28d;
+}
