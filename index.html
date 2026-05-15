@@ -15,9 +15,9 @@
 
       <nav class="nav-menu">
         <a href="#about">About</a>
-        <a href="#research">Research</a>
+        <a href="#selected-publications">Selected Publications</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="https://scholar.google.com/citations?user=J5LcpdcAAAAJ&hl=en" target="_blank">Publications</a>
+        <a href="https://scholar.google.com/citations?user=J5LcpdcAAAAJ&hl=en" target="_blank">Google Scholar</a>
         <a href="#contact">Contact</a>
         <button onclick="ubahMode()" class="mode-button" id="modeButton">Dark Mode</button>
       </nav>
@@ -34,24 +34,24 @@
       <div class="hero-text">
         <p class="small-title">Personal Academic Website</p>
         <h1>Kamaluddin Kasim</h1>
-        <h2>Policy Analist | Fisheries Resource Management | Sustainable Fisheries Enthusiast | Stock Assessment</h2>
+        <h2>Policy Analyst | Fisheries Resource Management | Sustainable Fisheries Enthusiast | Stock Assessment</h2>
 
-    <p class="teks-justify">
-  Saat ini saya adalah Analis Kebijakan Madya pada Pusat Kebijakan Strategis (PUSKAJIS) Kementerian Kelautan dan Perikanan. 
-  Saya sangat tertarik pada isu terkait pengelolaan perikanan berkelanjutan, khususnya pada perikanan skala kecil, dinamika 
-  sumber daya ikan, tata kelola perikanan, serta penguatan kebijakan berbasis bukti. 
-  Melalui berbagai publikasi ilmiah, saya berupaya menghadirkan perspektif utuh tentang bagaimana sciences, manusia, dan sumber daya
-  perikanan berinteraksi dalam satu kebijakan. Saya percaya, kebijakan pengelolaan perikanan berbasis bukti ilmiah dan 
-  pengarusutamaan konsep tiga pilar keberlanjutan (triple-bottom-line) ekologi, ekonomi, dan sosial komunitas adalah kunci 
-  pengelolaan perikanan berkelanjutan.
-</p>
+        <p class="teks-justify">
+          Saat ini saya adalah Analis Kebijakan Madya pada Pusat Kebijakan Strategis (PUSKAJIS) Kementerian Kelautan dan Perikanan. 
+          Saya sangat tertarik pada isu terkait pengelolaan perikanan berkelanjutan, khususnya pada perikanan skala kecil, dinamika 
+          sumber daya ikan, tata kelola perikanan, serta penguatan kebijakan berbasis bukti. 
+          Melalui berbagai publikasi ilmiah, saya berupaya menghadirkan perspektif utuh tentang bagaimana sciences, manusia, dan sumber daya
+          perikanan berinteraksi dalam satu kebijakan. Saya percaya, kebijakan pengelolaan perikanan berbasis bukti ilmiah dan 
+          pengarusutamaan konsep tiga pilar keberlanjutan (triple-bottom-line) ekologi, ekonomi, dan sosial komunitas adalah kunci 
+          pengelolaan perikanan berkelanjutan.
+        </p>
 
         <div class="hero-buttons">
           <a href="https://scholar.google.com/citations?user=J5LcpdcAAAAJ&hl=en" target="_blank" class="button primary">
             Google Scholar
           </a>
-          <a href="#contact" class="button secondary">
-            Contact Me
+          <a href="#selected-publications" class="button secondary">
+            Selected Publications
           </a>
         </div>
       </div>
@@ -68,7 +68,7 @@
         </div>
 
         <div class="info-card">
-          <h3>Links</h3>
+          <h3>Academic Links</h3>
           <a href="https://scholar.google.com/citations?user=J5LcpdcAAAAJ&hl=en" target="_blank">Google Scholar</a>
           <a href="mailto:kamaluddin.kasim99@gmail.com">Email</a>
           <a href="https://wa.me/6281234567890?text=Halo%20Kamal,%20saya%20tertarik%20dengan%20profil%20Anda" target="_blank">WhatsApp</a>
@@ -79,95 +79,131 @@
 
         <section class="section" id="about">
           <h2>About</h2>
-          <p>
+          <p class="teks-justify">
             Saya adalah peneliti dan praktisi di bidang perikanan yang memiliki perhatian pada kajian stok ikan, pengelolaan perikanan berkelanjutan, 
             serta penyediaan informasi ilmiah sebagai dasar pengambilan kebijakan. Website ini dibuat sebagai ruang profil profesional 
-            untuk menampilkan pengalaman, publikasi, portofolio kajian, dan informasi kontak secara ringkas bagi para 
-            pihak yang berkecimpung dalam pengelolaan sumber daya perikanan.
+            untuk menampilkan pengalaman, publikasi, portofolio kajian, dan informasi kontak secara ringkas bagi para pihak yang 
+            berkecimpung dalam pengelolaan sumber daya perikanan.
           </p>
         </section>
 
-       <section class="section" id="research">
-  <h2>Research Interests</h2>
+        <section class="section" id="selected-publications">
+          <h2>Selected Publications</h2>
+          <p class="section-intro">
+            Klik salah satu topik berikut untuk melihat daftar publikasi yang relevan.
+          </p>
 
-  <div class="tag-list">
-    <button onclick="tampilkanPublikasiFisheries()" class="interest-button">
-      Fisheries Resource Management
-    </button>
+          <div class="publication-topic-list">
+            <button onclick="togglePublication('publikasiFisheries')" class="interest-button">
+              Fisheries Resource Management
+            </button>
 
-    <span>Small-Scale Fisheries</span>
-    <span>Fisheries Governance</span>
-    <span>Evidence-Based Policy</span>
-    <span>Sustainable Fisheries</span>
-  </div>
+            <button onclick="togglePublication('publikasiSmallScale')" class="interest-button">
+              Small-Scale Fisheries
+            </button>
 
-  <div id="publikasiFisheries" class="publication-list">
-    <h3>Related Publications</h3>
+            <button onclick="togglePublication('publikasiGovernance')" class="interest-button">
+              Fisheries Governance
+            </button>
 
-    <ul>
-      <li>
-        <a href="https://www.gjesm.net/article_719456.html" target="_blank">
-          Publication 1 - Innovation in the blue economy and environmental sustainability
-        </a>
-      </li>
+            <button onclick="togglePublication('publikasiPolicy')" class="interest-button">
+              Evidence-Based Policy
+            </button>
+          </div>
 
-      <li>
-        <a href="https://www.gjesm.net/article_734983.html" target="_blank">
-          Publication 2 - Impacts of mangrove land use change on carbon stocks in coastal ecosystems
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
-<div id="publikasiSmallScale" class="publication-list">
-  <h3>Small-Scale Fisheries Publications</h3>
+          <div id="publikasiFisheries" class="publication-list">
+            <h3>Fisheries Resource Management</h3>
 
-  <ul>
-    <li>
-      <a href="https://www.tandfonline.com/doi/full/10.1080/08920753.2024.2370061" target="_blank">
-        Small-Scale Fisheries Publication 1
-      </a>
-    </li>
+            <ul>
+              <li>
+                <a href="https://www.gjesm.net/article_719456.html" target="_blank">
+                  Innovation in the blue economy and environmental sustainability
+                </a>
+              </li>
 
-    <li>
-      <a href="https://atsea-program.com/wp-content/uploads/2022/03/An-EAFM-for-Red-Snapper-Fishery-Baselines.pdf" target="_blank">
-        Small-Scale Fisheries Publication 2
-      </a>
-    </li>
-  </ul>
-</div>
+              <li>
+                <a href="https://www.gjesm.net/article_734983.html" target="_blank">
+                  Impacts of mangrove land use change on carbon stocks in coastal ecosystems
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div id="publikasiSmallScale" class="publication-list">
+            <h3>Small-Scale Fisheries</h3>
+
+            <ul>
+              <li>
+                <a href="https://atsea-program.com/wp-content/uploads/2022/03/An-EAFM-for-Red-Snapper-Fishery-Baselines.pdf" target="_blank">
+                  An EAFM for Red Snapper Fishery: Baselines
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.tandfonline.com/doi/full/10.1080/08920753.2024.2370061" target="_blank">
+                  Small-Scale Fisheries Publication
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div id="publikasiGovernance" class="publication-list">
+            <h3>Fisheries Governance</h3>
+
+            <ul>
+              <li>
+                <a href="https://scholar.google.com/citations?user=J5LcpdcAAAAJ&hl=en" target="_blank">
+                  View related publications on Google Scholar
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div id="publikasiPolicy" class="publication-list">
+            <h3>Evidence-Based Policy</h3>
+
+            <ul>
+              <li>
+                <a href="https://scholar.google.com/citations?user=J5LcpdcAAAAJ&hl=en" target="_blank">
+                  View related publications on Google Scholar
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
         <section class="section" id="portfolio">
           <h2>Portfolio</h2>
 
           <div class="portfolio-item">
             <h3>Fisheries Stock Assessment</h3>
-            <p>
-              keahlian dalam kajian stok perikanan, khususnya dalam menganalisis dinamika sumber daya ikan, 
+            <p class="teks-justify">
+              Keahlian dalam kajian stok perikanan, khususnya dalam menganalisis dinamika sumber daya ikan, 
               status pemanfaatan, serta potensi keberlanjutan stok sebagai dasar pengelolaan perikanan yang berbasis ilmiah. 
               Melalui berbagai publikasi dan kajian, ia berkontribusi dalam menyediakan informasi strategis untuk mendukung 
-              pengambilan keputusan, perumusan kebijakan, dan pengelolaan perikanan yang berkelanjutan, adaptif, dan bertanggung jawab
+              pengambilan keputusan, perumusan kebijakan, dan pengelolaan perikanan yang berkelanjutan, adaptif, dan bertanggung jawab.
             </p>
           </div>
 
           <div class="portfolio-item">
             <h3>Marine and Fisheries Policy</h3>
             <p>
-              Pemerhati kebijakan pengelolaan perikanan berkelanjutan dan konservasi sumber daya ikan
+              Pemerhati kebijakan pengelolaan perikanan berkelanjutan dan konservasi sumber daya ikan.
             </p>
           </div>
 
           <div class="portfolio-item">
             <h3>Sumber Daya Ikan Berkelanjutan</h3>
             <p>
-              Sektor perikanan adalah masa depan, kunci Blue Food sebagai pilar ketahanan pangan masa depan
+              Sektor perikanan adalah masa depan, kunci Blue Food sebagai pilar ketahanan pangan masa depan.
             </p>
           </div>
         </section>
 
         <section class="section" id="publications">
-          <h2>Publications</h2>
+          <h2>Google Scholar</h2>
           <p>
-            Daftar publikasi dan profil akademik dapat dilihat melalui halaman Google Scholar.
+            Daftar publikasi lengkap dan profil akademik dapat dilihat melalui halaman Google Scholar.
           </p>
 
           <a href="https://scholar.google.com/citations?user=J5LcpdcAAAAJ&hl=en" target="_blank" class="button primary">
@@ -178,8 +214,7 @@
         <section class="section" id="contact">
           <h2>Contact</h2>
           <p>
-            Untuk kolaborasi, diskusi, atau undangan kegiatan, silakan hubungi saya melalui
-            email atau WhatsApp.
+            Untuk kolaborasi, diskusi, atau undangan kegiatan, silakan hubungi saya melalui email atau WhatsApp.
           </p>
 
           <div class="contact-buttons">
@@ -199,45 +234,43 @@
     <p>© 2026 Kamaluddin Kasim. Personal academic website.</p>
   </footer>
 
-<script>
-  const tombol = document.getElementById("modeButton");
+  <script>
+    const tombol = document.getElementById("modeButton");
 
-  if (localStorage.getItem("mode") === "dark") {
-    document.body.classList.add("dark-mode");
-    tombol.textContent = "Light Mode";
-  }
-
-  function ubahMode() {
-    document.body.classList.toggle("dark-mode");
-
-    if (document.body.classList.contains("dark-mode")) {
+    if (localStorage.getItem("mode") === "dark") {
+      document.body.classList.add("dark-mode");
       tombol.textContent = "Light Mode";
-      localStorage.setItem("mode", "dark");
-    } else {
-      tombol.textContent = "Dark Mode";
-      localStorage.setItem("mode", "light");
     }
-  }
 
-  function tampilkanPublikasiFisheries() {
-    const daftar = document.getElementById("publikasiFisheries");
+    function ubahMode() {
+      document.body.classList.toggle("dark-mode");
 
-    if (daftar.style.display === "block") {
-      daftar.style.display = "none";
-    } else {
-      daftar.style.display = "block";
+      if (document.body.classList.contains("dark-mode")) {
+        tombol.textContent = "Light Mode";
+        localStorage.setItem("mode", "dark");
+      } else {
+        tombol.textContent = "Dark Mode";
+        localStorage.setItem("mode", "light");
+      }
     }
-  }
 
-  function tampilkanPublikasiSmallScale() {
-    const daftar = document.getElementById("publikasiSmallScale");
+    function togglePublication(id) {
+      const selectedList = document.getElementById(id);
+      const allLists = document.querySelectorAll(".publication-list");
 
-    if (daftar.style.display === "block") {
-      daftar.style.display = "none";
-    } else {
-      daftar.style.display = "block";
+      allLists.forEach(function(list) {
+        if (list.id !== id) {
+          list.style.display = "none";
+        }
+      });
+
+      if (selectedList.style.display === "block") {
+        selectedList.style.display = "none";
+      } else {
+        selectedList.style.display = "block";
+      }
     }
-  }
-</script>
+  </script>
+
 </body>
 </html>
