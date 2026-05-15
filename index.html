@@ -119,7 +119,23 @@
     </ul>
   </div>
 </section>
+<div id="publikasiSmallScale" class="publication-list">
+  <h3>Small-Scale Fisheries Publications</h3>
 
+  <ul>
+    <li>
+      <a href="https://www.tandfonline.com/doi/full/10.1080/08920753.2024.2370061" target="_blank">
+        Small-Scale Fisheries Publication 1
+      </a>
+    </li>
+
+    <li>
+      <a href="https://atsea-program.com/wp-content/uploads/2022/03/An-EAFM-for-Red-Snapper-Fishery-Baselines.pdf" target="_blank">
+        Small-Scale Fisheries Publication 2
+      </a>
+    </li>
+  </ul>
+</div>
         <section class="section" id="portfolio">
           <h2>Portfolio</h2>
 
@@ -183,7 +199,7 @@
     <p>© 2026 Kamaluddin Kasim. Personal academic website.</p>
   </footer>
 
- <script>
+<script>
   const tombol = document.getElementById("modeButton");
 
   if (localStorage.getItem("mode") === "dark") {
@@ -205,6 +221,16 @@
 
   function tampilkanPublikasiFisheries() {
     const daftar = document.getElementById("publikasiFisheries");
+
+    if (daftar.style.display === "block") {
+      daftar.style.display = "none";
+    } else {
+      daftar.style.display = "block";
+    }
+  }
+
+  function tampilkanPublikasiSmallScale() {
+    const daftar = document.getElementById("publikasiSmallScale");
 
     if (daftar.style.display === "block") {
       daftar.style.display = "none";
