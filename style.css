@@ -418,12 +418,6 @@ footer {
   border-radius: 8px;
 }
 
-.counter-note {
-  font-size: 13px;
-  color: #94a3b8;
-  font-style: italic;
-}
-
 /* Animation */
 
 @keyframes fadeUp {
@@ -554,10 +548,6 @@ footer {
 
 .dark-mode .visitor-counter p {
   color: #cbd5e1;
-}
-
-.dark-mode .counter-note {
-  color: #94a3b8;
 }
 
 /* Responsive */
